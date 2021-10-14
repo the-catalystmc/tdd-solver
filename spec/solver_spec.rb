@@ -1,6 +1,6 @@
 require_relative '../solver'
 
-describe Factorial do
+describe Solver do
   context 'With valid input' do
     it 'should instansiate a person with age 20' do
       solver = Solver.new
