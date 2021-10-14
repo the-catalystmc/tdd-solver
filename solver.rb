@@ -1,6 +1,8 @@
 class Solver
   def factorial(num)
     total = 1
+    return 'Negative number found' if num.negative?
+
     num.downto(1) { |n| total *= n }
     total
   end
@@ -12,5 +14,5 @@ class Solver
   # def fizzbuzz; end
 end
 
-f = Solver.new
-p f.factorial(5)
+# f = Solver.new
+# p f.factorial(-1)
